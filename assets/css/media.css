@@ -1,1 +1,69 @@
-@media (min-width: 576px){#article[class~=s-section]{padding-left:3rem;}[class~=intro-header]{margin-top:1rem;}[class~=social-media-buttons]{font-size:27pt;}[class~=website-logo]{width:.375in;}#article[class~=s-section]{padding-bottom:3rem;}[class~=footer-text],[class~=footer-header]{font-size:18pt;}#article[class~=s-section]{padding-right:3rem;}#article[class~=s-section]{padding-top:3rem;}[class~=footer-text-inquiry]{font-size:20px;}}@media (min-width: 768px){}@media (min-width: 992px){}@media (min-width: 1200px){}@media (max-width: 575px){[class~=news-header],[class~=intro-header]{font-size:1.5em;}[class~=intro-header],[class~=news-header]{text-align:center;}#article[class~=s-section]{padding-left:1.5rem;}[class~=social-media-buttons]{font-size:1.5pc;}[class~=website-logo]{width:1.5pc;}[class~=footer-text],[class~=footer-header],[class~=footer-text-inquiry]{font-size:1pc;}#article[class~=s-section]{padding-bottom:1.5rem;}#article[class~=s-section]{padding-right:1.5rem;}#article[class~=s-section]{padding-top:1.5rem;}}@media (max-width: 767px){}@media (max-width: 991px){}@media (max-width: 1199px){}
+/* Small devices (landscape phones) */
+
+@media (min-width: 576px) {
+  .intro-header {
+    margin-top: 1rem;
+  }
+  .social-media-buttons {
+    font-size: 36px;
+  }
+  .website-logo {
+    width: 36px;
+  }
+  .footer-header, .footer-text {
+    font-size: 24px;
+  }
+  .footer-text-inquiry, .footer-link-container {
+    font-size: 20px;
+  }
+  #article.s-section {
+    padding: 3rem;
+  }
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops) */
+
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {}
+
+/* The given screen size or smaller */
+
+/* Extra small devices (portrait phones)*/
+
+@media (max-width: 575px) {
+  .intro-header, .news-header {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .social-media-buttons {
+    font-size: 24px;
+  }
+  .website-logo {
+    width: 24px;
+  }
+  .footer-header, .footer-text, .footer-text-inquiry, .footer-link-container {
+    font-size: 16px;
+  }
+  #article.s-section {
+    padding: 1.5rem;
+  }
+}
+
+/* Small devices (landscape phones)*/
+
+@media (max-width: 767px) {}
+
+/* Medium devices (tablets)*/
+
+@media (max-width: 991px) {}
+
+/* Large devices (desktops)*/
+
+@media (max-width: 1199px) {}

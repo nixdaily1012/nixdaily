@@ -1,1 +1,157 @@
-#intro[class~=s-section]{padding-left:3rem;}[class~=content-wrapper]{padding-left:0;}#intro[class~=s-section]{padding-bottom:3rem;}[class~=content-wrapper]{padding-bottom:2.5rem;}[class~=content-wrapper]{padding-right:0;}[class~=content-wrapper]{padding-top:2.5rem;}[class~=media-wrapper]{display:flex;}[class~=media-wrapper]{justify-content:center;}[class~=media-wrapper]{align-items:center;}[class~=nav-item]{color:#fff;}[class~=news-column]{margin-bottom:4rem;}[class~=news-column],[class~=news-column]:hover{border-left-width:.010416667in;}[class~=news-column],[class~=news-column]:hover{border-bottom-width:.010416667in;}[class~=news-column]{padding-left:2rem;}[class~=news-column]:hover,[class~=news-column]{border-right-width:.010416667in;}[class~=news-column]{padding-bottom:2rem;}[class~=news-column]{padding-right:2rem;}[class~=news-column]{padding-top:2rem;}[class~=news-column],[class~=news-column]:hover{border-top-width:.010416667in;}[class~=news-column],[class~=news-column]:hover{border-left-style:solid;}[class~=news-column]:hover,[class~=news-column]{border-bottom-style:solid;}[class~=news-column]:hover,[class~=news-column]{border-right-style:solid;}[class~=news-column]:hover,[class~=news-column]{border-top-style:solid;}#intro[class~=s-section]{padding-right:3rem;}[class~=news-column]{border-left-color:lightgray;}[class~=news-column]{border-bottom-color:lightgray;}[class~=news-column]{border-right-color:lightgray;}[class~=news-column]{border-top-color:lightgray;}[class~=news-column]{border-image:none;}#intro[class~=s-section]{padding-top:3rem;}[class~=news-column]{border-radius:3.75pt;}[class~=news-column]{transition:all .2s ease-in-out;}[class~=news-icon],[class~=news-text]{text-align:center;}[class~=news-column]:hover{border-left-color:gray;}#intro[class~=s-section]{background-color:#005a3f;}[class~=news-title]{font-size:25px;}[class~=news-column]:hover{border-bottom-color:gray;}[class~=news-column]:hover{border-right-color:gray;}[class~=news-column]:hover{border-top-color:gray;}[class~=news-title]{font-weight:600;}[class~=news-title]{margin-top:1rem;}.news-desc{font-family:"Basier Circle";}.news-desc{font-size:.166666667in;}.news-desc{font-weight:400;}.news-desc{line-height:1.2;}[class~=news-column]:hover{border-image:none;}#article[class~=s-section]{background-color:#fff;}.news-desc{margin-top:15px;}.news-desc{overflow:hidden;}.news-desc{text-overflow:ellipsis;}.news-desc{white-space:nowrap;}[class~=img-background]{object-fit:contain;}[class~=news-column]:hover{filter:drop-shadow(0px 0px 3px rgba(0,0,0,.1)) brightness(1.1);}body{background-color:black;}.zoomin-image{width:auto;}.zoomin-image{height:100%;}[class~=news-column]:hover{transform:translateY(-8px);}#org-chart.s-section{background-color:#000c12;}#org-chart.s-section{background-image:url("https://www.transparenttextures.com/patterns/fabric-of-squares.png?v=1");}
+/*
+======================================================================
+
+    Nix Daily Main Stylesheet
+    04-26-2020
+
+    --------------------------------------------------
+
+    TOC:
+    # Imports
+    # Main
+    # Bootstrap
+        ## Dropdown
+    # Custom
+        ## Selection
+        ## Cursor*
+        ## Scrollbar*
+        ## Tooltip
+        ## Shadow
+        ## Rotate
+        ## Font
+    # Utility Classes
+        ## Text Align
+        ## Float
+        ## Text Tools
+        ## Round Class
+        ## Shadow Colors
+        ## Material Depth
+        ## Material Icons Sizes
+        ## Image Sizes
+        ## Row Tools
+        ## List
+    # Global Classes
+        ## Button Classes
+        ## Typography Classes
+    # Pages
+        ## Override
+        ## General
+            ### General - Button
+            ### General - Dropdown
+            ### General - Section
+            ### General - Slogan
+            ### General - Center
+            ### General - Links
+            ### General - Navigation
+        ## Home
+        ## Menu
+        ## About
+        ## Contact
+
+    # Snippets
+        ## 
+
+======================================================================
+*/
+
+/* # Main
+* ----------------------------------------------------- */
+body {
+  background-color: black;
+}
+
+/* # Pages
+* ----------------------------------------------------- */
+
+/* ## General */
+.content-wrapper {
+  padding: 2.5rem 0;
+}
+
+.media-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  font-weight: bold;
+  color: white;
+}
+
+/* ### General - Navigation */
+.nav-item {
+  color: #FFFFFF;
+}
+
+/* ## Home */
+#intro.s-section {
+  padding: 3rem;
+  background-color: #005a3f;
+}
+
+#article.s-section, #terms-of-service.s-section, #privacy-policy.s-section {
+  background-color: #ffffff;
+}
+
+#org-chart.s-section {
+  background-color: #000c12;
+  background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+}
+
+.footer-link {
+  color: #999999;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.news-column {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border: 1px solid lightgray;;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.news-column:hover {
+  border: 1px solid gray;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.1)) brightness(1.1);
+  transform: translateY(-8px);
+}
+
+.news-icon {
+  text-align: center;
+}
+
+.news-text {
+  text-align: center;
+}
+
+.news-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.news-desc {
+  font-family: 'Basier Circle';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* word-break: break-all; */
+}
+
+.img-background {
+  object-fit: contain;
+}
+
+.zoomin-image{
+  width: auto;
+  height: 100%;
+}
